@@ -1,0 +1,2 @@
+docker exec -t broker kafka-topics --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic streaming.insurance.checkout.created --if-not-exists
+docker exec -t broker kafka-topics --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic streaming.insurance.payment.paid --if-not-exists
